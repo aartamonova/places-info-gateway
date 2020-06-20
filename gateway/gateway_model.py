@@ -27,11 +27,9 @@ class TokenData:
     def check_token(token):
         try:
             decode_token(token.access_token)
-        except ExpiredSignatureError:
-            return False
         except:
-            return True
-        return True
+            return False
+        return False
 
     @staticmethod
     def save(source_app, request_app, access_token):
