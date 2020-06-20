@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+<div align="center">
+    <div class="panel panel-default" align="center" style="padding-bottom: 10px;">
+        <div class="panel-body">
+            <h3><b>Авторизация</b></h3>
+            <br>
+
+            <div align="center" style="max-width: 300px;">
+                {{ wtf.quick_form(form, button_map={'submit':'primary'}) }}
+            </div>
+
+            <br>
+            <h5 align="center">
+                Нет учетной записи?&nbsp&nbsp
+                <a href={{register_url}}>Зарегистрироваться</a>
+            </h5>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
