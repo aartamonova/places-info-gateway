@@ -9,10 +9,10 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # Services settings
-    GUI_SERVICE_URL = 'http://0.0.0.0:5000'
-    AUTH_SERVICE_URL = 'http://0.0.0.0:5001'
-    TAGS_SERVICE_URL = 'http://0.0.0.0:5002'
-    PLACES_SERVICE_URL = 'http://0.0.0.0:5003'
+    GUI_SERVICE_URL = 'https://places-info.herokuapp.com'
+    AUTH_SERVICE_URL = 'https://places-info-auth.herokuapp.com'
+    TAGS_SERVICE_URL = 'https://places-info-tags.herokuapp.com'
+    PLACES_SERVICE_URL = 'https://places-info-places.herokuapp.com'
 
     REGISTER_URL = GUI_SERVICE_URL + '/register'
 
